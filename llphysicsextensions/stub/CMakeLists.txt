@@ -41,24 +41,20 @@ include_directories(
 set(llphysicsextensions_SOURCE_FILES
     llpathinglib.cpp
     LLPathingLibStubImpl.cpp
-    llconvexdecomposition.cpp
-    LLConvexDecompositionStubImpl.cpp
     llphysicsextensions.cpp
     LLPhysicsExtensionsStubImpl.cpp
     )
-    
+
 set(llphysicsextensions_HEADER_FILES
 
     ${LLPHYSICSEXTENSIONS_INCLUDE_DIR}/llpathinglib.h
-    ${LLPHYSICSEXTENSIONS_INCLUDE_DIR}/llconvexdecomposition.h
     ${LLPHYSICSEXTENSIONS_INCLUDE_DIR}/llphysicsextensions.h
     LLPathingLibStubpImpl.h
-    LLConvexDecompositionStubImpl.h
     LLPhysicsExtensionsStubImpl.h
     )
 
 if (WINDOWS)
-   list(APPEND llphysicsextensions_HEADER_FILES 
+   list(APPEND llphysicsextensions_HEADER_FILES
                ${LLPHYSICSEXTENSIONS_INCLUDE_DIR}/windowsincludes.h)
 endif (WINDOWS)
 
